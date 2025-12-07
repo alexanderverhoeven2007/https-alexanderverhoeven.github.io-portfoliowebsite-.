@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Logo Marker
   const myIcon = L.icon({
-    iconUrl: 'assets/images/logo.png',
+    iconUrl: 'logo.png',
     iconSize: [48, 48],
     iconAnchor: [24, 48],
     popupAnchor: [0, -48]
@@ -23,3 +23,4 @@ document.addEventListener('DOMContentLoaded', function () {
     .bindPopup("Sint-Job-in-'t-Goor (mijn regio)")
     .openPopup();
 });
+
