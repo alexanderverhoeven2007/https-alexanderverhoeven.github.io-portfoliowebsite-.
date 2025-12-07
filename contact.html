@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Alexander Verhoeven</title>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header>
+  <img src="assets/images/logo.png" class="header-logo" alt="Logo">
+  <h1>Contact</h1>
+</header>
+
+<div class="container">
+
+  <nav class="sidebar">
+    <h3>Navigatie</h3>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Projecten</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="content contact-layout">
+
+    <form class="contact-form">
+      <h2>stuur een bericht</h2>
+
+      <label for="naam">naam</label>
+      <input id="naam" type="text" required>
+
+      <label for="email">e-mail</label>
+      <input id="email" type="email" required>
+
+      <label for="bericht">bericht</label>
+      <textarea id="bericht" rows="5" required></textarea>
+
+      <button type="submit">verzenden</button>
+    </form>
+
+    <div class="contact-box">
+      <h2>contactgegevens</h2>
+
+      <p>
+        <i class="bi bi-person-fill"></i>
+        <span>alexander verhoeven</span>
+      </p>
+
+      <p>
+        <i class="bi bi-envelope-fill"></i>
+        <a href="mailto:alexander.verhoeven2007@gmail.com">
+          alexander.verhoeven2007@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <i class="bi bi-telephone-fill"></i>
+        <a href="tel:+32487013179">
+          +32 487 01 31 79
+        </a>
+      </p>
+
+      <div id="map" style="width:100%; height:250px; border-radius:8px; margin-top:20px;"></div>
+    </div>
+
+  </main>
+
+</div>
+
+<footer class="site-footer">
+    <div class="text-light mb-2">
+    &copy; <span id="current-year"></span>
+  </div>
+  <div class="footer-icons">
+    <a href="mailto:alexander.verhoeven2007@gmail.com" aria-label="E-mail Alexander">
+      <i class="bi bi-envelope-fill"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/alexander-verhoeven-360bb8347/" target="_blank" rel="noopener" aria-label="LinkedIn-profiel">
+      <i class="bi bi-linkedin"></i>
+    </a>
+  </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="js/map.js"></script>
+
+</body>
+</html>
